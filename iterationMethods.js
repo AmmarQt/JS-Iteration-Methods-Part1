@@ -18,6 +18,14 @@ const filterdArray = numbers.filter(function (number) {
 });
 
 console.log(filterdArray);
+const divisibleBy5 = numbers.filter(function (number) {
+  if (number % 5) {
+    return false;
+  } else {
+    return true;
+  }
+});
+console.log(divisibleBy5);
 
 /*****************************************************************
 Part 2: Mapping
@@ -34,6 +42,10 @@ const squaredNum = numbers.map(function (number) {
 
 console.log(squaredNum);
 
+const multipliedBy2 = numbers.map(function (number) {
+  return number * 2;
+});
+console.log(multipliedBy2);
 /*****************************************************************
 Part 3: Combining Filtering and Mapping
 
